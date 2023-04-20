@@ -25,14 +25,14 @@ public class MesService {
     // crear el objeto 
     public Mes eleigirMes() {
         Mes m1 = new Mes();
-        String mesSecreto;
-        mesSecreto = m1.getMeses()[9];
+        String mesSecreto = m1.getMeses()[9];
         m1.setMesSecreto(mesSecreto);
+        
         return m1;
     }
-
+    
     public void adivinarMes(Mes m1) {
-        boolean bandera = true;
+       
         int intentos=3;
         System.out.println("Adivine el mes secreto. Digite un mes en minusculas");
         do {

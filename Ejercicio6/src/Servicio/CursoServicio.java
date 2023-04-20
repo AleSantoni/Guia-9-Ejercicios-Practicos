@@ -36,7 +36,8 @@ en cada repetición que se ingrese el nombre de cada alumno.
 asignan a sus respectivos atributos para llenar el objeto Curso. 
 En este método invocamos al método cargarAlumnos() para asignarle valor al atributo alumnos
     */
-    public void crearCurso(Curso c1, CursoServicio cs){
+    public Curso crearCurso(){
+         Curso c1 = new Curso();
         System.out.println("Digite el nombre del curso ->");
         c1.setNombreCurso(leer.nextLine());
         System.out.println("Digitr las cantidad de horas por dia que se dica el curso->");
@@ -57,7 +58,9 @@ En este método invocamos al método cargarAlumnos() para asignarle valor al atr
         }while (bandera);
         System.out.println("Digite el precio por hora ->");
         c1.setPrecioPorHora(leer.nextDouble());
-        cs.cargarAlumnos(c1);
+        
+      cargarAlumnos(c1);
+        return c1;
         
     }
     /*

@@ -20,8 +20,8 @@ public class main {
      */
     public static void main(String[] args) {
        CursoServicio cs= new CursoServicio();
-       Curso c1= new Curso();
-       cs.crearCurso(c1, cs);
+       Curso c1= cs.crearCurso();
+      
        cs.calcularGananciaSemanal(c1);
  
         
